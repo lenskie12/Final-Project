@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> High School Alma Mater </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SVNHS</a>
+		<div class="menuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu();"></>Home</a><li>
+			<li><a href="about.html" onclick="toggleMenu();"></>About</a><li>
+			<li><a href="events.html" onclick="toggleMenu();"></>Events</a><li>
+			<li><a href="gallery.html" onclick="toggleMenu();"></>Gallery</a><li>
+			<li><a href="contacts.html" onclick="toggleMenu();"></>Contact</a><li>
+		</ul>
+	</header>
+
+	<section class="about" id="about">
+		<div class="row">
+			<div class="course">
+				<h2 class="titleText"><span>A</span>bout Us</h2>
+				<br><br>
+					<h1>Courses We Offer</h1>
+					<p>Presently, the school caters both junior and senior high school accordance with the resolution that was ordered by the Department of Education (DepEd) . It has Academic track that prepares students who plan to pursue a college education and comprises three strands such as Accountancy, Business, and Management ( ABM ), Humanities and Social Sciences ( HUMSS ) and General Academic Strand ( GAS ).</p>
+			
+			<div class="courses">
+				<div class="courses-col">
+					<h3>GAS</h3>
+					<p>The General Academic Strand or GAS is one of the four strands of the Academic Track for Senior High School. Unlike the other career-specific strands, GAS is designed for students who are not decided yet on what course they want to take in college.</p>
+				</div>
+				<div class="courses-col">
+					<h3>HUMSS</h3>
+					<p>HUMSS stands for Humanities and Social Sciences. It is one of the strands offered to Senior High students. This strand is for learners who aim to take up journalism, communication arts, liberal arts, education, and other social science-related courses in college.</p>
+				</div>
+				<div class="courses-col">
+					<h3>ABM</h3>
+					<p>The Accountancy, Business and Management (ABM) strand would focus on the basic concepts of financial management, business management, corporate operations, and all things that are accounted for.</p>
+				</div>
+			</div>
+	</div>
+	</section>
+	<section>
+			<div class="col50">
+				<div class="imgBx">
+					<img src="images/enrollment.jpg">
+				</div>
+			</div>
+	</section>
+	<section>
+		<div class="title">
+			<h2 class="titleText"><span>M</span>ission <span>V</span>ision and <span>C</span>ore <span>V</span>alues</h2>
+				<h3>Our Mission</h3>
+				<br>
+				<p>To protect and promote the right of every Filipino to quality, equilable, culture-based, and complete basic education, where: Students learn in a child-friendly, gender-sensitive, safe, and motivating environment; Teacher facilitate learning and constantly nurture every learner; Administrator and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen; Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p>
+				<br><br>
+				<h3>Our Vision</h3>
+				<br>
+				<p>We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation. As a learner-centered public institution, the Department of Education continuously improves itself to better serve its stakeholders.</p>
+				<br><br>
+				<h3>Our Core Values</h3>
+				<br>
+				<p>Maka-Diyos, Maka-tao, Makakalikasan at Makabansa</p>
+		</div>
+	</section>
+		<section class="facilities">
+		<h2 class="titleText"><span>F</span>acilities</h2>
+		<br><br>
+		<div class="facility">
+			<div class="facility-col">
+				<img src="images/ground.jpg">
+				<h3>Our School Background</h3>
+				<p>As we can see that our school background can accomodate all students available in our school. This is also where all the events and program happend where the G-10 student's CAT are also being trained. Like for arranging the seats, assisting the students, making the students listen and maintaining their post for the teacher's and student's to easily know where they are.</p>
+			</div>
+			<br><br>
+			<div class="facility-col">
+				<img src="images/classroom.jpg">
+				<h3>Our School Classroom</h3>
+				<p>Every classroom have the same width and height that can accomodate up to 50+ students in every classrooms and students are also responsible for the cleanliness of their own classrooms. Where in some programs and events students are also the one that make it more pleasant and beautiful to win the program or event like the Christmas classroom event that students design their own classroom to win.</p>
+			</div>
+	</section>
+	
+	
+		<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header= document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		
+	</script>
+</body>
+</html>

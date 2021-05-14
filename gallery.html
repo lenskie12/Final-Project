@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> High School Alma Mater </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SVNHS</a>
+		<div class="menuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu();"></>Home</a><li>
+			<li><a href="about.html" onclick="toggleMenu();"></>About</a><li>
+			<li><a href="events.html" onclick="toggleMenu();"></>Events</a><li>
+			<li><a href="gallery.html" onclick="toggleMenu();"></>Gallery</a><li>
+			<li><a href="contacts.html" onclick="toggleMenu();"></>Contact</a><li>
+		</ul>
+	</header>
+	<section class="gallery" id="gallery">
+		<div class="title">
+			<h2 class="titleText"><span>G</span>allery</h2>
+				<p>This is where the school programs and activities pictures stored.</p>
+		</div>
+		
+			<div class="gallery">
+				<a href="images/christmasdancewithmayor.jpg" data-lightbox="images"><img src="images/christmasdancewithmayor.jpg"></a>
+				<a href="images/awarding.jpg" data-lightbox="images"><img src="images/awarding.jpg"></a>
+				<a href="images/builders.jpg" data-lightbox="images"><img src="images/builders.jpg"></a>
+				<a href="images/camping.jpg" data-lightbox="images"><img src="images/camping.jpg"></a>
+				<a href="images/christmasdance.jpg" data-lightbox="images"><img src="images/christmasdance.jpg"></a>
+				<a href="images/christmasdanceparents.jpg" data-lightbox="images"><img src="images/christmasdanceparents.jpg"></a>
+				<a href="images/christmasmessage.jpg" data-lightbox="images"><img src="images/christmasmessage.jpg"></a>
+				<a href="images/christmasparty.jpg" data-lightbox="images"><img src="images/christmasparty.jpg"></a>
+				<a href="images/classroom.jpg" data-lightbox="images"><img src="images/classroom.jpg"></a>
+				<a href="images/classroomcleaning.jpg" data-lightbox="images"><img src="images/classroomcleaning.jpg"></a>
+				<a href="images/clay.jpg" data-lightbox="images"><img src="images/clay.jpg"></a>
+				<a href="images/contestant.jpg" data-lightbox="images"><img src="images/contestant.jpg"></a>
+				<a href="images/culturaldance.jpg" data-lightbox="images"><img src="images/culturaldance.jpg"></a>
+				<a href="images/farming.jpg" data-lightbox="images"><img src="images/farming.jpg"></a>
+				<a href="images/flex.jpg" data-lightbox="images"><img src="images/flex.jpg"></a>
+				<a href="images/foresthouseseminar.jpg" data-lightbox="images"><img src="images/foresthouseseminar.jpg"></a>
+				<a href="images/g12zumba.jpg" data-lightbox="images"><img src="images/g12zumba.jpg"></a>
+				<a href="images/ground.jpg" data-lightbox="images"><img src="images/ground.jpg"></a>
+				<a href="images/grouppicture.jpg" data-lightbox="images"><img src="images/grouppicture.jpg"></a>
+				<a href="images/headteachermessage.jpg" data-lightbox="images"><img src="images/headteachermessage.jpg"></a>
+				<a href="images/hiking.jpg" data-lightbox="images"><img src="images/hiking.jpg"></a>
+				<a href="images/mayor.jpg" data-lightbox="images"><img src="images/mayor.jpg"></a>
+				<a href="images/mayorandteachers.jpg" data-lightbox="images"><img src="images/mayorandteachers.jpg"></a>
+				<a href="images/me.jpg" data-lightbox="images"><img src="images/me.jpg"></a>
+				<a href="images/nc2seminar.jpg" data-lightbox="images"><img src="images/nc2seminar.jpg"></a>
+				<a href="images/ogt.jpg" data-lightbox="images"><img src="images/ogt.jpg"></a>
+				<a href="images/pageant.jpg" data-lightbox="images"><img src="images/pageant.jpg"></a>
+				<a href="images/parentstalent.jpg" data-lightbox="images"><img src="images/parentstalent.jpg"></a>
+				<a href="images/perform.jpg" data-lightbox="images"><img src="images/perform.jpg"></a>
+				<a href="images/planting.jpg" data-lightbox="images"><img src="images/planting.jpg"></a>
+				<a href="images/prayers.jpg" data-lightbox="images"><img src="images/prayers.jpg"></a>
+				<a href="images/program.jpg" data-lightbox="images"><img src="images/program.jpg"></a>
+				<a href="images/schoolcooking.jpg" data-lightbox="images"><img src="images/schoolcooking.jpg"></a>
+				<a href="images/seminar.jpg" data-lightbox="images"><img src="images/seminar.jpg"></a>
+				<a href="images/swimming.jpg" data-lightbox="images"><img src="images/swimming.jpg"></a>
+				<a href="images/teachersing.jpg" data-lightbox="images"><img src="images/teachersing.jpg"></a>
+				<a href="images/traditional.jpg" data-lightbox="images"><img src="images/traditional.jpg"></a>
+				<a href="images/trekking.jpg" data-lightbox="images"><img src="images/trekking.jpg"></a>
+			</div>
+
+	</section>
+		<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header= document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> High School Alma Mater </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SVNHS</a>
+		<div class="menuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu();"></>Home</a><li>
+			<li><a href="about.html" onclick="toggleMenu();"></>About</a><li>
+			<li><a href="events.html" onclick="toggleMenu();"></>Events</a><li>
+			<li><a href="gallery.html" onclick="toggleMenu();"></>Gallery</a><li>
+			<li><a href="contacts.html" onclick="toggleMenu();"></>Contact</a><li>
+		</ul>
+	</header>
+	<section class="events" id="events">
+		<div class="content">
+		<div class="title">
+			<h2 class="titleText"><span>N</span>ews / <span>E</span>vents</h2>
+		</div>
+		<div class="content">
+			<div class="title">
+					<h2>School Tuitions/Fees</h2>
+						<p>Minimum Tuition Fee: PHP 1,000<br>
+							Maximum Tuition Fee: PHP 10,000</p>
+							<br><br>
+					<h2>School Admission Requirements</h2>
+						<p><b>For New Students:</b> <br>Original Report Card (Form 138) <br>Permanent Record (Form 137 Certificate of Good Moral  <br>2 pcs. 1x1 Colored Id picture  <br>Photocopy of NSO Birth Certificate  <br>Long Brown Envelope </p>
+		</div>
+		<br>
+		<div class="title">
+			<h2 class="titleText"><span>S</span>chool <span>P</span>rograms</h2>
+				<p>This is where the school held a program or events for every year so all students can participate and show their own talents.</p>
+		</div>
+		
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/pageant.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="opacity">	
+				</div>
+				<div class="text">
+					<h3>School Pageants</h3>
+					<p>This event is held every year for the students to join and experience new things around them. This pageant show that every students joining it will gain a little bit of confidence towards themselves and to also show their greatest or hidden talents.</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/traditional.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="opacity">
+				</div>
+				<div class="text">
+					<h3>School Foundation Day with Ethnic Attires</h3>
+					<p>Every year, the school celebrates its respective foundation days to commemorate the day when the school was founded or established. Commemorating the school foundation day is significant since it is the chance to remind the  students about the humble beginning of their educational institution.
+					 Where the school also make it an ethnic attire program for the students to wear their ethnics attire for the event to be more fun.</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/bodybuilding.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="opacity">	
+				</div>
+				<div class="text">
+					<h3>School Bodybuilding Contest</h3>
+					<p>Unlike strength or endurance, bodybuilding are not focused on performance. It's about enhancing the physical appearance. This events if to shows more confidents about yourself by being healthy. This is always celebrated every year during the nutrition month program where students participate to win or to show their bodies and encourages students to also be healthy.</p>
+				</div>
+			</div>
+			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+		<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header= document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+		}	
+	</script>
+</body>
+</html>

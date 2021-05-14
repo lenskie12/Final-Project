@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> High School Alma Mater </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SVNHS</a>
+		<div class="menuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu();"></>Home</a><li>
+			<li><a href="about.html" onclick="toggleMenu();"></>About</a><li>
+			<li><a href="events.html" onclick="toggleMenu();"></>Events</a><li>
+			<li><a href="gallery.html" onclick="toggleMenu();"></>Gallery</a><li>
+			<li><a href="contacts.html" onclick="toggleMenu();"></>Contact</a><li>
+		</ul>
+	</header>
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>San Vicente National High School</h2>
+			<p>Baguio is a public secondary educational institution located San Vicente, Baguio City. The school aims to provide affordable and quality education in the community.</p>
+			<a href="#" class="btn">Welcome</a>
+		</div>
+	</section>
+	<section>
+			<h3>Description</h3>
+				<p>* School ID : 305278 
+				* School Name : San Vicente National High School (Integrated Senior High School) 
+				* School Name w/ Add : San Vicente National High School (Integrated Senior High School), Baguio City, Benguet 
+				* Short Name : SVNHS 
+				* Previous Name : San Vicente National High School 
+				* Address : San Vicente Barangay 
+				* Municipality : Baguio City 
+				* Region : CAR 
+				* Province : Benguet 
+				* Division : Baguio City 
+				* Legistative District : Lone District 
+				* Curricular Class : Junior High School with Senior High School 
+				* Date of Operation : Saturday, January 01, 2000 
+				* Sub-Classification : DepED Managed 
+				* School Type : Annex or Extension school(s) 
+				* Class Organization : Monograde 
+				* Telephone : none 
+				* Fax Number : none</p>
+	</section>
+	
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header= document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		
+	</script>
+
+</body>
+</html>

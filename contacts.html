@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> High School Alma Mater </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SVNHS</a>
+		<div class="menuToggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu();"></>Home</a><li>
+			<li><a href="about.html" onclick="toggleMenu();"></>About</a><li>
+			<li><a href="events.html" onclick="toggleMenu();"></>Events</a><li>
+			<li><a href="gallery.html" onclick="toggleMenu();"></>Gallery</a><li>
+			<li><a href="contacts.html" onclick="toggleMenu();"></>Contact</a><li>
+		</ul>
+	</header>
+		<section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"><span>C</span>ontact Us</h2>
+				<div class="contact-col">
+			
+					<form action="form-handler.php" method="post">
+						<input type="text" name="name" placeholder=" Enter your name" required>
+						<input type="email" name="email" placeholder=" Enter email address" required>
+						<textarea rows="8" name="message"  placeholder="Message" required></textarea>
+						<button type="submit" class="hero-btn lightgreen-btn">Send Message</button>
+					</form>
+			
+				</div>
+		</div>
+		<br><br>
+		<div class="title">
+			<h2 class="titleText"><span>S</span>chool <span>L</span>ocation</h2>
+		</div>
+			<div class="map-responsive">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5869753665793!2d120.59446705037485!3d16.39498908862489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1162704443d%3A0xdaec59b0e08d4cfa!2sSAN%20VICENTE%20NATIONAL%20HIGH%20SCHOOL!5e0!3m2!1sen!2sph!4v1620877488632!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+
+	</section>
+		<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header= document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		
+	</script>
+</body>
+</html>

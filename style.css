@@ -1,0 +1,391 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+p{
+	font-weight: 300;
+	color: black;
+}
+.logo{
+	text-shadow: 2px 2px black;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/school.jfif);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner .content{
+	max-width: 900px;
+	text-align: center;
+}
+.banner .content h2{
+	font-size: 6em;
+	color: green;
+	text-shadow: 2px 2px black;	
+}
+.banner .content p{
+	font-size: 2em;
+	color: white;
+	text-shadow: 2px 1px black;
+}
+.btn{
+	font-size: 1.5em;
+	color: green;
+	background: lightgreen;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 20px;
+	text-transform: uppercase;
+	text-decoration:none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+.btn:hover{
+	letter-spacing: 6px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header .sticky{
+	background: white;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20 px rgba(0,0,0,0.05);
+}
+header .logo{
+	color: green;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+header .sticky .logo{
+	color: lightgreen;
+}
+header .logo span{
+	color: black;
+}
+header .navigation{
+	font-size: 1.5em;
+	position: relative;
+	display: flex;
+
+}
+header .navigation li{
+	list-style: none;
+	margin-left: 30px;
+}
+header .navigation li a{
+	text-decoration: none;
+	color: green;
+	font-weight: 300;
+}
+header .sticky .navigation li a{
+	code: white;
+}
+header .navigation li a:hover{
+	color: green;
+}
+section{
+	padding: 100px;
+}
+.course{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: black;
+	font-size: 14px;
+	font-weight: 22px;
+	padding: 10px;
+}
+.courses{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.courses-col{
+	flex-basis: 31%;
+	background: lightgreen;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.courses-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.facilities{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.facility-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.facility-col img{
+	width: 100%;
+	border-radius: 10px;
+}
+.facility-col p{
+	padding: 0;
+}
+.facility-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.about{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+.col50{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+.col50 img{
+		width: 100%;
+}
+
+.row{
+	position:relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.row .col50{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+.titleText{
+	color: green;
+	font-size: 3em;
+	font-weight: 200;
+	text-shadow: 2px 2px white;
+}
+.titleText span{
+	color: darkgreen;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.events .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.events .content .box{
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.events .content .box .imgBx{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.events .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.events .content .box .text{
+	padding: 15px 0 5px;
+}
+.events .content .box .text h3{
+	font-weight: 400;
+	color: black;
+}
+.gallery{
+	margin: 10px 50px;
+}
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+	height: 100%;
+}
+.gallery img:hover{
+	filter: grayscale(100%);
+	transform: scale (1.1);
+}
+
+.contact-col input, .contact-col textarea{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+@media(max-width: 991px){
+	header,
+	header .sticky{
+		padding: 10px 20px;
+	}
+	header .navigation{
+		display: none;
+	}
+	header .navigation.active{
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: lightgreen;
+	}
+	header .navigation li{
+		margin-left: 0;
+	}
+	header .navigation li a{
+		text-decoration: none;
+		color: black;
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+	.menuToggle{
+		position: relative;
+		width:34px;
+		height: 30px;
+		background: url(images/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeate;
+		background-position: center;
+		cursor: pointer;
+	}
+	.menuToggle.active{
+		background: url(images/exit.png);
+		background-size: 30px;
+		background-repeat: no-repeate;
+		background-position: center;
+		cursor: pointer;	
+	}
+	header. sticky .menuToggle{
+		filter: invert(1);
+	}
+	section{
+		padding: 20px;
+	}
+	.banner .content h2{
+		font-size: 3em;
+		color: darkgreen;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row .col50{
+		position: relative;
+		width: 100%;
+	}
+	.row .col50 .imgBx{
+		height: 300px;
+		margin-top: 20px;
+	}
+	.events .content{
+		margin-top: 20px;
+	}
+	.events .content .box{
+		margin: 10px;
+	}
+	.events .content .box .imgBx{
+		height: 260px;
+	}
+	.title{
+		text-align: center;
+	}
+	.titleText{
+		font-size: 1.8em;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+		font-weight: 300;
+		text-shadow: 2px 2px white;
+	}
+	.contactForm{
+		padding: 35px 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 700px){
+	.courses{
+		flex-direction: column;
+	}
+		
+}
+
+@media(max-width: 480px){
+	.banner .content h2 {
+		font-size: 2.2em;
+		color: lightgreen;
+	}
+}
